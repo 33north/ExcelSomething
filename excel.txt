@@ -1,0 +1,248 @@
+Sub Macro01()
+    
+''Get rid of all the merges
+'    Range("A:AI").Find("IRVINE WAREHOUSE").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    Selection.UnMerge
+'    MsgBox "IRVINE WAREHOUSE is done"
+'
+'    Range("A:AI").Find("Pre-Order").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    Selection.UnMerge
+'    MsgBox "Pre-Order"
+'
+'    Range("A:AI").Find("Limited Time Promotions").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Limited Time Promotions"
+'
+'    Range("A:AI").Find("Featured").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Featured"
+'
+'    Range("A:AI").Find("Kits").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Kit"
+'
+'    Range("A:AI").Find("Blends").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Blends"
+'
+'    Range("A:AI").Find("Singles").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Singles"
+'
+'    'Range("A:AI").Find("Products").Select
+'    'With Selection
+'    '    .MergeCells = False
+'    'End With
+'    'MsgBox "Products"
+'
+'    Range("A:AI").Find("Accessories").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Accessories"
+'
+'    Range("A:AI").Find("Additional Items").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Additional Items"
+'
+'    Range("A:AI").Find("Bare Living - Marketing Materials / Accessories").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Bare Living - Marketing Materials / Accessories"
+'
+'    Range("A:AI").Find("Components").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Components"
+'
+'    Range("A:AI").Find("Tools").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    MsgBox "Tools"
+'
+''Get rid of the 2 extra columns
+'    Rows("1:4").Select
+'    Selection.Delete
+'    MsgBox "Rows 1-4 have been deleted."
+'
+'    Columns("T:T").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    Columns("T:T").Select
+'    Selection.Delete
+'    MsgBox "Columns T has been deleted."
+'
+'    Columns("AG:AG").Select
+'    With Selection
+'        .MergeCells = False
+'    End With
+'    Columns("AG:AG").Select
+'    Selection.Delete
+'    MsgBox "Columns AG has been deleted."
+'
+''Resizing the ItemID Column
+'    Columns("AG:AG").AutoFit
+'    MsgBox "Column AG has been AutoFitted."
+'
+''Copying ItemId Column to the front and creating 2 new Columns
+'    Columns("A:A").Select
+'    Selection.Insert Shift:=xlToRight
+'    Columns("AH:AH").Select
+'    Selection.Copy
+'    Columns("A:A").Select
+'    ActiveSheet.Paste
+'    MsgBox "Copy ItemId Column"
+'
+'    Columns("A:A").Select
+'    Selection.Insert Shift:=xlToRight
+'    Selection.Insert Shift:=xlToRight
+'    MsgBox "Create 2 new columns"
+'
+''Changing Column width
+'    Columns("B:B").Select
+'    With Selection
+'        .ColumnWidth = 40
+'    End With
+'    MsgBox "Column Width 40"
+'
+'    Columns("D:D").Select
+'    With Selection
+'        .ColumnWidth = 40
+'    End With
+'    MsgBox "Column Width 40"
+'
+'    Range("A:AI").Find("IRVINE WAREHOUSE").Select
+'    Selection.Cut
+'    Range("B4").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Irvine Warehouse"
+'
+'    Range("A:AI").Find("Pre-Order").Select
+'    Selection.Cut
+'    Range("B5").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Pre-Order"
+'
+'    Range("A:AI").Find("Limited Time Promotions").Select
+'    Selection.Cut
+'    Range("B9").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Limited Time Promotions"
+'
+'    Range("A:AI").Find("Featured").Select
+'    Selection.Cut
+'    Range("B48").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Featured"
+'
+'    Range("A:AI").Find("Kits").Select
+'    Selection.Cut
+'    Range("B52").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Kits"
+'
+'    Range("A:AI").Find("Blends").Select
+'    Selection.Cut
+'    Range("B71").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Blends"
+'
+'    Range("A:AI").Find("Singles").Select
+'    Selection.Cut
+'    Range("B91").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Singles"
+'
+'    'Range("A:AI").Find("Products").Select
+'    'Selection.Cut
+'    'Range("B171").Select
+'    'ActiveSheet.Paste
+'    'MsgBox "Cut and Paste Products"
+'
+'    Range("A:AI").Find("Accessories").Select
+'    Selection.Cut
+'    Range("B251").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Accessories"
+'
+'    Range("A:AI").Find("Additional Items").Select
+'    Selection.Cut
+'    Range("B486").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Additional Items"
+'
+'    Range("A:AI").Find("Bare Living - Marketing Materials / Accessories").Select
+'    Selection.Cut
+'    Range("B507").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Bare Living - Marketing Materials / Accessories"
+'
+'    Range("A:AI").Find("Components").Select
+'    Selection.Cut
+'    Range("B514").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Components"
+'
+'    Range("A:AI").Find("Tools").Select
+'    Selection.Cut
+'    Range("B741").Select
+'    ActiveSheet.Paste
+'    MsgBox "Cut and Paste Tools"
+
+'    Rows("1:3").Select
+'    Selection.Delete
+'    MsgBox "Rows 1-3 have been deleted."
+    
+'    Rows("4:5").Select
+'    Selection.Delete
+'    MsgBox "Rows 4-5 have been deleted."
+'    Rows("41:42").Select
+'    Selection.Delete
+'    MsgBox "Rows 41-42 have been deleted."
+'    Rows("43:44").Select
+'    Selection.Delete
+'    MsgBox "Rows 43-44 have been deleted."
+    Rows("60:61").Select
+    Selection.Delete
+    MsgBox "Rows 60-61 have been deleted."
+    Rows("89:90").Select
+    MsgBox ""
+    Rows("169:170").Select
+    MsgBox ""
+    Rows("249:250").Select
+    MsgBox ""
+    Rows("484:485").Select
+    MsgBox ""
+    Rows("505:506").Select
+    MsgBox ""
+    Rows("512:513").Select
+    MsgBox ""
+    Rows("739:740").Select
+    MsgBox ""
+    
+End Sub
+
+
+
